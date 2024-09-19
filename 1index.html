@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthQuest Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HealthQuest: Gamify Your Waiting Room</h1>
+        </header>
+
+        <section id="game-section">
+            <h2>Handwashing Game</h2>
+            <div id="handwash-game">
+                <p>Swipe your hands to clean! (Click the buttons below)</p>
+                <button id="soap">Apply Soap</button>
+                <button id="wash">Wash Hands</button>
+                <div id="game-result"></div>
+            </div>
+        </section>
+
+        <section id="quiz-section">
+            <h2>Health Quiz</h2>
+            <div id="quiz">
+                <p id="quiz-question">What is the recommended amount of daily water intake?</p>
+                <ul id="quiz-options">
+                    <li><button onclick="checkAnswer(0)">2 liters</button></li>
+                    <li><button onclick="checkAnswer(1)">5 liters</button></li>
+                    <li><button onclick="checkAnswer(2)">8 liters</button></li>
+                    <li><button onclick="checkAnswer(3)">1 liter</button></li>
+                </ul>
+                <div id="quiz-feedback"></div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</bo
+dy></html>
